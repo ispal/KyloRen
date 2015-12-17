@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lightsaber</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<body>
+    <div class="container">
+        <div class="tooltip">
+            Use the Force, Luke!
+        </div>
+        <div class="tooltip-left">
+            Trust your feelings and click
+        </div>
+        <div class="lightsaber lightsaber--main">
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark up"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <div class="lightsaber__spark down"></div>
+            <input id="lightsaber-switch-1" type="checkbox" class="lightsaber__light lightsaber__light--main">
+            <label for="lightsaber-switch-1" class="lightsaber__handle"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+
+            var lightsaberSound = new Audio('lightsaber.mp3'),
+                lightsaberHandle = $('.lightsaber__handle'),
+                lightsaber = $('.lightsaber');
+
+            lightsaberHandle.on('click', function(){
+                lightsaber.toggleClass('sparks');
+            });
+
+        });
+    </script>
+</body>
+</html>

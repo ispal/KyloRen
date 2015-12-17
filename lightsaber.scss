@@ -1,0 +1,29 @@
+/*
+ * Lightsaber variable
+ */
+$background-on:     #61B136;
+$background-off:    #FF5335;
+
+$border-radius:     2rem;
+
+$icon-bg:           #fff;
+
+$height:            50px;
+$width-on:         120px;
+$width-off:        120px;
+
+
+/*
+ * Lightsaber
+ */
+.lightsaber {
+    
+    &__handle {
+
+        &:after {
+            content: '';
+            background: url('luke.svg');
+        }
+        
+    }
+}
